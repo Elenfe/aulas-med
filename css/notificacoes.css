@@ -1,0 +1,116 @@
+.notificacao {
+    height: 100%;
+    background: #000;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.notificacao header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background: #000;    
+}
+
+.notificacao .close {
+    color: #fff;
+    font-size: 20px;
+}
+
+.notificacao .header__title {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+}
+
+.notificacao .header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px 20px 12px;
+    background: #000;
+}
+
+.notificacao .header__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.notificacao .header__text {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+.notificacao .total-notificacao {
+    color: #fff;
+    background: #595959;
+    font-size: 13px;
+    border-radius: 10px;
+    padding: 1px 10px 1px 10px;
+}
+
+.notificacao .container-menu {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.container-menu {
+    color: #fff;
+    font-size: 10px;
+    position: fixed;
+    top: 50px;
+    background: #000;
+    width: 100%;
+}
+
+.container-notificacao {
+    background: #000;
+    height: 100%;
+    color: #fff;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    padding-bottom: 70px;
+}
+
+.container-notificacao .tab {
+    border-bottom: 1px solid #a5a5a5;
+}
+
+.tab-data {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 12%;
+}
+
+.tab-dia {
+    color: #a5a5a5;
+}
+
+.tab-mes {
+    font-size: 8px;
+    color: #3a3a3a;
+}
+
+.tab-tema {
+    background: red;
+    width: 76%;
+}
+
+.tab-seta {
+    background: blue;
+    width: 12%;
+}
