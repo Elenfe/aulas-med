@@ -80,7 +80,7 @@
     height: 100%;
     color: #fff;
     position: absolute;
-    top: 80px;
+    top: 90px;
     width: 100%;
     padding-bottom: 70px;
 }
@@ -105,12 +105,26 @@
     color: #3a3a3a;
 }
 
-.tab-tema {
-    background: red;
+.tab-tema {    
     width: 76%;
 }
 
+.tab-tema__status {
+    background: red;
+    font-size: 12px;
+    width: 76%;
+    padding: 4px;
+    margin-bottom: 5px;
+}
+
+.tab-tema__text {
+    display: block;
+    font-size: clamp(0.5rem, 1rem, 1.5rem);
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+
 .tab-seta {
-    background: blue;
-    width: 12%;
+  width: 12px;
 }
