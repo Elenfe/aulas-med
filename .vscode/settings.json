@@ -1,0 +1,7 @@
+{
+    "editor.tabSize": 2,
+    "files.eol": "\n",
+    "prettier.disableLanguages": ["html"],
+    "eslint.autoFixOnSave": false,
+    "editor.formatOnSave": true
+}
