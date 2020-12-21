@@ -8,32 +8,38 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/material.css">
     <link rel="stylesheet" href="css/notificacoes.css">
-    <link rel="stylesheet" href="css/notificacoes.css">
+    <link rel="stylesheet" href="css/modal-produto.css">
 
 
     <title>MSPRO</title>
 </head>
     <body>
-        <header>
+        <header class="aulas">
             <div class="header">
                 <img class="icon-grade" src="img/icon_newmedcode.svg" alt="Icone grade">
                 <div class="header__title">
-                    <a class="header__link" href=""><span class="header__text">2020 INTENSIVÃO</span><img class="icon-produto" src="img/triangulo-preenchido-com-seta-para-baixo.svg" alt="Menu de produtos"></a>
+                    <a class="header__link" href="#modal-produto"><span class="header__text">2020 INTENSIVÃO</span><img class="icon-produto" src="img/triangulo-preenchido-com-seta-para-baixo.svg" alt="Menu de produtos"></a>
                 </div>
-                <img class="icon-balao" src="img/balao-fala.svg" alt="Balão de notificaçõs">
+                <a href="#modal-notificacao">
+                    <img class="icon-balao" src="img/balao-fala.svg" alt="Balão de notificaçõs">
+                </a>                
             </div>
-            <div class="container-menu">
-                <div class="menu-top menu-aulas">AULAS</div>
-                <div class="menu-top menu-material">MATERIAL</div>
-            </div>
-            <div class="container-busca">
-                <div class="area__busca">
-                    <input class="area__text" type="search" placeholder="Pesquisar especialidades, temas e etc...">
-                    <img class="area__icon" src="img/procurar.svg" alt="icone buscar">
-                </div>            
-            </div>
+            <nav>
+                <div class="container-menu">
+                    <a class="menu-top menu-aulas btn-aulas" href="#fechar">AULAS</a>                
+                    <a class="menu-top menu-material btn-material" href="#modal-material">MATERIAL</a>
+                    
+                </div>
+                <div class="container-busca">
+                    <div class="area__busca">
+                        <input class="area__text" type="search" placeholder="Pesquisar especialidades, temas e etc...">
+                        <img class="area__icon" src="img/procurar.svg" alt="icone buscar">
+                    </div>            
+                </div>
+            </nav>
         </header>
-        <div class="container-aulas">
+        <div class="modal-aulas">
+            
             <div class="aula-title">
                 <div class="aula__nome">PREVENTIVA</div>
             </div>
@@ -125,8 +131,285 @@
                     </div>
                 </div>
             </div>
-            <div class="bg_aulas"></div>
+            <div class="bg_aulas"></div>                
         </div>
+
+         <!-- material -->
+        <div id="modal-material" class="modal-material">
+            <div class="piechart">
+                <div class="pie">
+                    <div class="pie-down">100%</div>
+                    <div class="pie-espcialidade">CLM1 INF</div>
+                </div>
+                <div class="pie">
+                    <div class="pie-down">10%</div>
+                    <div class="pie-espcialidade">CLM1 INF</div>
+                </div>
+                <div class="pie">
+                    <div class="pie-down">10%</div>
+                    <div class="pie-espcialidade">CLM1 INF</div>
+                </div>
+                <div class="pie">
+                    <div class="pie-down">10%</div>
+                    <div class="pie-espcialidade">CLM1 INF</div>
+                </div>
+                <div class="pie">
+                    <div class="pie-down">10%</div>
+                    <div class="pie-espcialidade">CLM1 INF</div>
+                </div>
+                <div class="pie">
+                    <div class="pie-down">10%</div>
+                    <div class="pie-espcialidade">CLM1 INF</div>
+                </div>
+                <div class="pie">
+                    <div class="pie-down">10%</div>
+                    <div class="pie-espcialidade">CLM1 INF</div>
+                </div>
+                <div class="pie">
+                    <div class="pie-down">10%</div>
+                    <div class="pie-espcialidade">CLM1 INF</div>
+                </div>
+                <div class="pie">
+                    <div class="pie-down">10%</div>
+                    <div class="pie-espcialidade">CLM1 INF</div>
+                </div>
+                <div class="pie">
+                    <div class="pie-down">10%</div>
+                    <div class="pie-espcialidade">CLM1</div>
+                </div>
+                <div class="pie">
+                    <div class="pie-down">10%</div>
+                    <div class="pie-espcialidade">CLM1</div>
+                </div>
+                <div class="pie">
+                    <div class="pie-down">10%</div>
+                    <div class="pie-espcialidade">CLM1</div>
+                </div>
+                <div class="pie">
+                    <div class="pie-down">10%</div>
+                    <div class="pie-espcialidade">CLM1</div>
+                </div>
+                <div class="pie">
+                    <div class="pie-down">10%</div>
+                    <div class="pie-espcialidade">CLM1</div>
+                </div>
+                <div class="pie">
+                    <div class="pie-down">1%</div>
+                    <div class="pie-espcialidade">CLM1 INF</div>
+                </div>                
+            </div>
+        </div>        
+
+        <!-- Produtos -->
+        <div id="modal-produto" class="modal-produto">
+            <div class="content-produto">
+                <div class="header-produto">
+                    <h4 class="header-text">Selecione um produto:</h4>
+                </div>
+                <div class="combo-selecao__overflow-wrapper">
+                    <div class="combo-selecao__content conteiner-lista">
+                        <div class="combo-selecao__item">
+                            <div class="combo-selecao__check">
+                                <div class="combo-selecao__icon">
+                                    <div class="combo-selecao__icon-fill">
+                                        <img class="combo-selecao__icon-img" src="" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="combo-selecao__item-label">2020 R3 CLINICA</div>
+                        </div>
+                        <div class="combo-selecao__item">
+                            <div class="combo-selecao__check">
+                                <div class="combo-selecao__icon">
+                                    <div class="combo-selecao__icon-fill">
+                                        <img class="combo-selecao__icon-img" src="" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="combo-selecao__item-label">2020 R3 CLINICA</div>
+                        </div>
+                        <div class="combo-selecao__item">
+                            <div class="combo-selecao__check">
+                                <div class="combo-selecao__icon">
+                                    <div class="combo-selecao__icon-fill">
+                                        <img class="combo-selecao__icon-img" src="" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="combo-selecao__item-label">2020 R3 CLINICA</div>
+                        </div>
+                        <div class="combo-selecao__item">
+                            <div class="combo-selecao__check">
+                                <div class="combo-selecao__icon">
+                                    <div class="combo-selecao__icon-fill">
+                                        <img class="combo-selecao__icon-img" src="" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="combo-selecao__item-label">2020 R3 CLINICA</div>
+                        </div>
+                        <div class="combo-selecao__item">
+                            <div class="combo-selecao__check">
+                                <div class="combo-selecao__icon">
+                                    <div class="combo-selecao__icon-fill">
+                                        <img class="combo-selecao__icon-img" src="" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="combo-selecao__item-label">2020 R3 CLINICA</div>
+                        </div>
+                        <div class="combo-selecao__item">
+                            <div class="combo-selecao__check">
+                                <div class="combo-selecao__icon">
+                                    <div class="combo-selecao__icon-fill">
+                                        <img class="combo-selecao__icon-img" src="" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="combo-selecao__item-label">2020 R3 CLINICA</div>
+                        </div>
+                        <div class="combo-selecao__item">
+                            <div class="combo-selecao__check">
+                                <div class="combo-selecao__icon">
+                                    <div class="combo-selecao__icon-fill">
+                                        <img class="combo-selecao__icon-img" src="" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="combo-selecao__item-label">2020 R3 CLINICA</div>
+                        </div>
+                        <div class="combo-selecao__item">
+                            <div class="combo-selecao__check">
+                                <div class="combo-selecao__icon">
+                                    <div class="combo-selecao__icon-fill">
+                                        <img class="combo-selecao__icon-img" src="" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="combo-selecao__item-label">2020 R3 CLINICA</div>
+                        </div>
+                        <div class="combo-selecao__item">
+                            <div class="combo-selecao__check">
+                                <div class="combo-selecao__icon">
+                                    <div class="combo-selecao__icon-fill">
+                                        <img class="combo-selecao__icon-img" src="" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="combo-selecao__item-label">2020 R3 CLINICA</div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="combo-selecao__close">
+                    <a href="#fechar" class="combo-selecao__close-btn">
+                        FECHAR
+                    </a>
+                </div>               
+            </div>          
+        </div>        
+        
+        <!-- Notificações -->
+
+        <div id="modal-notificacao" class="notificacao">
+            <header>
+                <div class="header">
+                    <a class="btn_fechar" href="#fechar">
+                        <span class="close">X</span>
+                    </a>
+                    <div class="header__title">
+                        <span class="header__text">NOTIFICAÇÔES</span>
+                        <span class="total-notificacao">82</span>
+                    </div>                   
+                </div>
+                <div class="container-menu">
+                        <div class="menu-top menu-aulas">TODAS</div>
+                        <div class="menu-top menu-material">GERAL</div>
+                        <div class="menu-top menu-material">SIMULADOS</div>
+                        <div class="menu-top menu-material">DÚVIDAS ACADÉMICAS</div>
+                </div>
+            </header>
+            <div class="container-notificacao">
+                <div class="tab">            
+                    <label class="tab-label display-flex">
+                        <div class="tab-data">
+                            <span class="tab-dia">05</span>
+                            <span class="tab-mes">set/20</span>
+                        </div>
+                        <div class="tab-tema">
+                            <span class="tab-tema__status">Simulados</span>
+                            <span class="tab-tema__text">SIMULADOS 06 de R3 PED disponível. Realize!</span>
+                        </div>
+                        <img class="tab-seta" src="img/right-arrow.svg" alt="">
+                    </label>
+                </div>
+                <div class="tab">
+                    <label class="tab-label display-flex">
+                        <div class="tab-data">
+                            <span class="tab-dia">05</span>
+                            <span class="tab-mes">set/20</span>
+                        </div>
+                        <div class="tab-tema">
+                            <span class="tab-tema__status">Simulados</span>
+                            <span class="tab-tema__text">SIMULADOS 06 de R3 PED disponível. Realize!</span>
+                        </div>
+                        <img class="tab-seta" src="img/right-arrow.svg" alt="">
+                    </label>           
+                </div>
+                <div class="tab">
+                    <label class="tab-label display-flex">
+                        <div class="tab-data">
+                            <span class="tab-dia">05</span>
+                            <span class="tab-mes">set/20</span>
+                        </div>
+                        <div class="tab-tema">
+                            <span class="tab-tema__status">Simulados</span>
+                            <span class="tab-tema__text">SIMULADOS 06 de R3 PED disponível. Realize!</span>
+                        </div>
+                        <img class="tab-seta" src="img/right-arrow.svg" alt="">
+                    </label>
+                </div>
+                <div class="tab">
+                    <label class="tab-label display-flex">
+                        <div class="tab-data">
+                            <span class="tab-dia">05</span>
+                            <span class="tab-mes">set/20</span>
+                        </div>
+                        <div class="tab-tema">
+                            <span class="tab-tema__status">Simulados</span>
+                            <span class="tab-tema__text">SIMULADOS 06 de R3 PED disponível. Realize!</span>
+                        </div>
+                        <img class="tab-seta" src="img/right-arrow.svg" alt="">
+                    </label>
+                </div>
+                <div class="tab">
+                    <label class="tab-label display-flex">
+                        <div class="tab-data">
+                            <span class="tab-dia">05</span>
+                            <span class="tab-mes">set/20</span>
+                        </div>
+                        <div class="tab-tema">
+                            <span class="tab-tema__status">Simulados</span>
+                            <span class="tab-tema__text">SIMULADOS 06 de R3 PED disponível. Realize!</span>
+                        </div>
+                        <img class="tab-seta" src="img/right-arrow.svg" alt="">
+                    </label>
+                </div>
+                <div class="tab">
+                    <label class="tab-label display-flex">
+                        <div class="tab-data">
+                            <span class="tab-dia">05</span>
+                            <span class="tab-mes">set/20</span>
+                        </div>
+                        <div class="tab-tema">
+                            <span class="tab-tema__status">Simulados</span>
+                            <span class="tab-tema__text">SIMULADOS 06 de R3 PED disponível. Realize!</span>
+                        </div>
+                        <img class="tab-seta" src="img/right-arrow.svg" alt="">
+                    </label>
+                </div>
+            </div>
+        </div>
+
         <div class="menu" id="menu">
             <div class="folder">
                 <div onclick="toggleMenu()" class="folder__btn">
@@ -186,106 +469,6 @@
                 </div>            
             </div>
         </div>
-        
-        <!-- Notificações -->
-
-<div class="notificacao">
-    <header>
-        <div class="header">
-            <span class="close">X</span>
-            <div class="header__title">
-                <span class="header__text">NOTIFICAÇÔES</span>
-                <span class="total-notificacao">82</span>
-            </div>                   
-        </div>
-        <div class="container-menu">
-            <div class="menu-top menu-aulas">TODAS</div>
-            <div class="menu-top menu-material">GERAL</div>
-            <div class="menu-top menu-material">SIMULADOS</div>
-            <div class="menu-top menu-material">DÚVIDAS ACADÉMICAS</div>
-        </div>
-    </header>
-    <div class="container-notificacao">
-        <div class="tab">            
-            <label class="tab-label display-flex">
-                <div class="tab-data">
-                    <span class="tab-dia">05</span>
-                    <span class="tab-mes">set/20</span>
-                </div>
-                <div class="tab-tema">
-                    <span class="tab-tema__status">Simulados</span>
-                    <span class="tab-tema__text">SIMULADOS 06 de R3 PED disponível. Realize!</span>
-                </div>
-                <img class="tab-seta" src="img/right-arrow.svg" alt="">
-            </label>
-        </div>
-        <div class="tab">
-            <label class="tab-label display-flex">
-                <div class="tab-data">
-                    <span class="tab-dia">05</span>
-                    <span class="tab-mes">set/20</span>
-                </div>
-                <div class="tab-tema">
-                    <span class="tab-tema__status">Simulados</span>
-                    <span class="tab-tema__text">SIMULADOS 06 de R3 PED disponível. Realize!</span>
-                </div>
-                <img class="tab-seta" src="img/right-arrow.svg" alt="">
-            </label>           
-        </div>
-        <div class="tab">
-            <label class="tab-label display-flex">
-                <div class="tab-data">
-                    <span class="tab-dia">05</span>
-                    <span class="tab-mes">set/20</span>
-                </div>
-                <div class="tab-tema">
-                    <span class="tab-tema__status">Simulados</span>
-                    <span class="tab-tema__text">SIMULADOS 06 de R3 PED disponível. Realize!</span>
-                </div>
-                <img class="tab-seta" src="img/right-arrow.svg" alt="">
-            </label>
-        </div>
-        <div class="tab">
-            <label class="tab-label display-flex">
-                <div class="tab-data">
-                    <span class="tab-dia">05</span>
-                    <span class="tab-mes">set/20</span>
-                </div>
-                <div class="tab-tema">
-                    <span class="tab-tema__status">Simulados</span>
-                    <span class="tab-tema__text">SIMULADOS 06 de R3 PED disponível. Realize!</span>
-                </div>
-                <img class="tab-seta" src="img/right-arrow.svg" alt="">
-            </label>
-        </div>
-        <div class="tab">
-            <label class="tab-label display-flex">
-                <div class="tab-data">
-                    <span class="tab-dia">05</span>
-                    <span class="tab-mes">set/20</span>
-                </div>
-                <div class="tab-tema">
-                    <span class="tab-tema__status">Simulados</span>
-                    <span class="tab-tema__text">SIMULADOS 06 de R3 PED disponível. Realize!</span>
-                </div>
-                <img class="tab-seta" src="img/right-arrow.svg" alt="">
-            </label>
-        </div>
-        <div class="tab">
-            <label class="tab-label display-flex">
-                <div class="tab-data">
-                    <span class="tab-dia">05</span>
-                    <span class="tab-mes">set/20</span>
-                </div>
-                <div class="tab-tema">
-                    <span class="tab-tema__status">Simulados</span>
-                    <span class="tab-tema__text">SIMULADOS 06 de R3 PED disponível. Realize!</span>
-                </div>
-                <img class="tab-seta" src="img/right-arrow.svg" alt="">
-            </label>
-        </div>
-    </div>
-</div>
         <script type="text/javascript" src="js/scripts.js"></script>    
     </body>
 </html>
